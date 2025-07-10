@@ -2,28 +2,43 @@
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 16</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meu Portfolio!</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
-    <header>
-        <title>Aula 16</title>
-        <link rel="stylesheet" href="css/style.css">
-        <script src="js/script.js" defer></script>
-        <div class="botao">
-            <button class="btn1" onclick="abriModal('projeto')"></button>
-            <button class="btn2" onclick="abriModal('')"></button>
-            <button class="btn3" onclick="abriModal('contato')"></button>
-        </div>
-    </header>
-    <main>
-        <div class="perfil">
-            <img src="assets/perfil.jpeg" alt="">
-        </div>
+    <header>Mel Letícia Assis - Portfolio</header>
+    <div class="container" id="container">
+        <aside>
+            <div class="foto">
+                <img src="assets/perfil.jpeg" alt="minha foto" />
+            </div>
+            <button onclick="trocaDescri(0)">Quem sou</button>
+            <button onclick="trocaDescri(1)">Habilidades</button>
+            <button onclick="trocaDescri(2)">Cursos</button>
+            <button onclick="trocaDescri(3)">Contato</button>
+        </aside>
+        <main>
 
-    </main>
+            <h1 id="Titulo">Olá prazer!</h1>
+            <div class="descricao">
+                <p id="Texto">Meu nome é Mel Letícia, sou aspirante a desenvolvedora de software. Atualmente, estou
+                    em processo de
+                    formação na área de tecnologia, participando ativamente de cursos, projetos práticos e comunidades
+                    de
+                    desenvolvedores. Tenho paixão por inovação, tecnologia e por criar experiências digitais que
+                    realmente
+                    façam a diferença na vida das pessoas. Estou constantemente buscando aprimorar minhas habilidades em
+                    linguagens como Python, JavaScript, CSS, Reactjs, TypeScript, Nextjs, Nodejs, SQL e frameworks como
+                    React. Acredito no poder da tecnologia como ferramenta de transformação e estou comprometida em
+                    construir soluções criativas, eficientes e centradas no usuário.</p>
+            </div>
+        </main>
+    </div>
+    <footer>&copy;2025 - Mel Letícia Assis</footer>
 </body>
 
 </html>
