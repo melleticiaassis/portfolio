@@ -22,7 +22,8 @@ const descri = [
     }
 ]
 function trocaDescri(param) {
-    console.log(modalTexto)
+    if (!descri[param]) return
+
     ModalTitulo.innerHTML = descri[param].title
     modalTexto.innerHTML = descri[param].description
 }
